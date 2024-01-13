@@ -20,6 +20,7 @@ static string[] AllEndings(string language, string[] allLanguages, string[] endi
     }
     return languages;
 }
+
 var bundleCommand = new Command("bundle", "bundle code to file");
 var bundleOptionOutput = new Option<FileInfo>(new[] { "--output", "-o" }, "file path and name");
 bundleCommand.AddOption(bundleOptionOutput);
@@ -33,7 +34,9 @@ var bundleOptionRemoveEmptyLines = new Option<bool>(new[] { "--remove-empty-line
 bundleCommand.AddOption(bundleOptionRemoveEmptyLines);
 var bundleOptionAuthor = new Option<string>(new[] { "--author", "-a" }, "registering the name of the creator of the file");
 bundleCommand.AddOption(bundleOptionAuthor);
+
 var createRspCommand = new Command("create-rsp", "Create a response file with a ready command");
+
 string[] arrLanguage = { "c#", "c++", "c", "java", "python", "javaScript", "html", "css" };
 string[] arrEndings = { ".cs", ".cpp", ".c", ".java", ".py", ".js", ".html", ".css" };
 
@@ -56,8 +59,6 @@ bundleCommand.SetHandler((output, language, note, sort, remove, author) =>
                     bundleFile.WriteLine($"# Source code from: {path}\n");
                 foreach (string file in files)
                 {
-
-
                     if (note)
                         bundleFile.WriteLine($"#this Source code from: {file}\n");
 
