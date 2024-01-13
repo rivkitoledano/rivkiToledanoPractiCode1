@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8fNlskn+cMd4UPKzXFvS4RmPcN0E48U+HsS5U3iIkFLBNJjFDl+bWAxT1o74ph1Pta9SnCmW/hrkmDvZ0pc21g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user1\\Documents\\רבקי למודים\\פרקטיקוד\\bnd\\bnd\\bnd.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user1\\.nuget\\packages\\system.commandline\\2.0.0-beta4.22272.1\\system.commandline.2.0.0-beta4.22272.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,6 @@
+--output bundleProect
+--language c#
+--note
+
+--remove-empty-lines 
+--author rivki
